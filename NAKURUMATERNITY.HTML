@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Nakuru Maternity - Safe Births, Affordable Care</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="24-hour maternity, surgical & child health services on Shadrack Kimalel Road. Fully integrated with SHA. Affordable CS delivery Nakuru.">
+    <meta name="keywords" content="Maternity hospital Nakuru town, best nursing home Shadrack Kimalel road, Affordable CS delivery Nakuru, SHA approved hospital">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --emerald: #059669;
+            --emerald-light: #10b981;
+            --emerald-dark: #047857;
+            --navy: #1E293B;
+            --navy-light: #334155;
+            --navy-dark: #0f172a;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --red: #DC2626;
+            --whatsapp: #25D366;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-md: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--white);
+            color: var(--navy);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            width: 100%;
+            background-color: var(--emerald);
+            color: white;
+            padding: 0.75rem 1rem;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
+        }
+
+        .trust-bar.hidden {
+            transform: translateY(-100%);
+        }
+
+        .trust-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        @media (min-width: 640px) {
+            .trust-content {
+                flex-direction: row;
+                font-size: 1rem;
+            }
+        }
+
+        .trust-content i {
+            margin-right: 0.25rem;
+        }
+
+        .trust-content strong {
+            font-weight: 700;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 3rem 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .hero-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .hero-title {
+                font-size: 3.5rem;
+            }
+        }
+
+        .hero-title span {
+            color: var(--emerald);
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            max-width: 36rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .hero-buttons {
+                flex-direction: row;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--emerald);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--emerald-dark);
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--navy);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .hero-image {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, var(--emerald-light), var(--emerald));
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .hero-image {
+                height: 400px;
+            }
+        }
+
+        .hero-image-content i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .section-title span {
+            color: var(--emerald);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray-600);
+            max-width: 36rem;
+            margin: 0 auto 3rem;
+        }
+
+        /* Pricing Cards */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-200);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--gray-200);
+            background: linear-gradient(to bottom right, white, var(--gray-50));
+        }
+
+        .card-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+        }
+
+        .card-icon.emerald {
+            color: var(--emerald);
+            background: rgba(5, 150, 105, 0.1);
+        }
+
+        .card-icon.navy {
+            color: var(--navy);
+            background: rgba(30, 41, 59, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            color: var(--gray-500);
+            font-size: 0.875rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .price-row {
+            margin-bottom: 1rem;
+        }
+
+        .price-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--gray-500);
+            margin-bottom: 0.25rem;
+        }
+
+        .price-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--emerald);
+        }
+
+        .price-value.small {
+            font-size: 1.125rem;
+            color: var(--navy);
+        }
+
+        .card-waiver {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.75rem;
+            border: 1px solid var(--emerald);
+            color: var(--emerald);
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .card-waiver:hover {
+            background-color: var(--emerald);
+            color: white;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem 1rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-200);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: var(--emerald-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: 0 auto 1rem;
+            background-color: var(--gray-100);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--emerald);
+            font-size: 1.75rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            background-color: var(--emerald);
+            color: white;
+        }
+
+        .service-name {
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+        }
+
+        .service-desc {
+            font-size: 0.75rem;
+            color: var(--gray-500);
+        }
+
+        /* Map Section */
+        .map-section {
+            background: linear-gradient(to bottom right, var(--gray-50), white);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .map-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .map-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .map-info {
+            color: var(--navy);
+        }
+
+        .map-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--emerald);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .map-title {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .map-title span {
+            color: var(--emerald);
+        }
+
+        .map-address {
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .map-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--emerald);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .map-link:hover {
+            color: var(--emerald-dark);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--navy);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+
+        /* Dual Float Buttons */
+        .float-buttons {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 50;
+        }
+
+        @media (min-width: 640px) {
+            .float-buttons {
+                right: 1.5rem;
+            }
+        }
+
+        .float-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 9999px;
+            color: white;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        @media (min-width: 640px) {
+            .float-btn {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .float-btn.call {
+            background: linear-gradient(to bottom right, #ef4444, var(--red));
+        }
+
+        .float-btn.call i {
+            animation: pulse 2s infinite;
+        }
+
+        .float-btn.whatsapp {
+            background-color: var(--whatsapp);
+            position: relative;
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -0.25rem;
+            right: -0.25rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-color: var(--red);
+            border: 2px solid white;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+            box-shadow: var(--shadow);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        i {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <!-- Trust Bar -->
+    <div class="trust-bar" id="trustBar">
+        <div class="trust-content">
+            <span>
+                <i class="fas fa-heartbeat"></i> We have transitioned!
+            </span>
+            <span>
+                Use your <strong>SHA (SHIF) benefits</strong> here for Normal & CS deliveries. Fully integrated for universal coverage.
+            </span>
+        </div>
+    </div>
+
+    <!-- Dual Float Buttons -->
+    <div class="float-buttons">
+        <a href="tel:+2540512210243" class="float-btn call">
+            <i class="fas fa-phone-alt fa-xl"></i>
+        </a>
+        <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nakuru%20Maternity%2C%20I'm%20inquiring%20about%20delivery%20charges%20and%20SHA%20coverage." target="_blank" class="float-btn whatsapp">
+            <span class="notification-badge">1</span>
+            <i class="fab fa-whatsapp fa-xl"></i>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="fade-in">
+                        <h1 class="hero-title">
+                            Safe Births, <span>Affordable Care</span>, Healthy Families.
+                        </h1>
+                        <p class="hero-subtitle">
+                            Your 24-hour partner for maternity, surgery, and child health on Shadrack Kimalel Road. Now fully integrated with <strong>SHA (Social Health Authority)</strong> for universal coverage.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#pricing" class="btn btn-primary">
+                                View Maternity Packages
+                            </a>
+                            <a href="tel:+2540512210243" class="btn btn-secondary">
+                                <i class="fas fa-phone-alt"></i> Call for Emergency
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fade-in">
+                        <div class="hero-image">
+                            <div class="hero-image-content">
+                                <i class="fas fa-baby"></i>
+                                <h3>Nakuru Maternity & Nursing Home</h3>
+                                <p style="opacity: 0.9; font-size: 0.875rem;">Compassionate Care, Advanced Medicine</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    Transparent <span>Maternity Pricing</span>
+                </h2>
+                <p class="section-subtitle">
+                    Know your costs upfront. See what's covered by SHA and our affordable out-of-pocket rates.
+                </p>
+
+                <div class="pricing-grid">
+                    <!-- Normal Delivery Card -->
+                    <div class="pricing-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon emerald">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h3 class="card-title">Normal Delivery</h3>
+                            <p class="card-desc">Vaginal delivery with standard postnatal care.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="price-row">
+                                <div class="price-label">SHA Tariff</div>
+                                <div class="price-value">KES 11,200</div>
+                            </div>
+                            <div class="price-row">
+                                <div class="price-label">Out of Pocket</div>
+                                <div class="price-value small">KES 15,000 - 20,000</div>
+                            </div>
+                            <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nakuru%20Maternity%2C%20I'm%20inquiring%20about%20Normal%20Delivery%20and%20SHA%20coverage." class="card-waiver">
+                                Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CS Delivery Card -->
+                    <div class="pricing-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon navy">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3 class="card-title">Cesarean Section (CS)</h3>
+                            <p class="card-desc">Surgical delivery with specialist surgeon and ward stay.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="price-row">
+                                <div class="price-label">SHA Tariff</div>
+                                <div class="price-value">KES 32,600</div>
+                            </div>
+                            <div class="price-row">
+                                <div class="price-label">Out of Pocket</div>
+                                <div class="price-value small">KES 45,000 - 60,000</div>
+                            </div>
+                            <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nakuru%20Maternity%2C%20I'm%20inquiring%20about%20CS%20Delivery%20and%20SHA%20coverage." class="card-waiver">
+                                Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Antenatal Care Card -->
+                    <div class="pricing-card fade-in">
+                        <div class="card-header">
+                            <div class="card-icon emerald">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h3 class="card-title">Antenatal Care</h3>
+                            <p class="card-desc">Full package including scans and lab tests.</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="price-row">
+                                <div class="price-label">SHA Tariff</div>
+                                <div class="price-value">Covered under SHA</div>
+                            </div>
+                            <div class="price-row">
+                                <div class="price-label">Out of Pocket</div>
+                                <div class="price-value small">KES 8,000 - 12,000</div>
+                            </div>
+                            <a href="https://wa.me/254XXXXXXXXX?text=Hello%20Nakuru%20Maternity%2C%20I'm%20inquiring%20about%20Antenatal%20Care%20and%20SHA%20coverage." class="card-waiver">
+                                Inquire via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    Our <span>Core Services</span>
+                </h2>
+                <p class="section-subtitle">
+                    Comprehensive healthcare under one roof, tailored for mothers and children.
+                </p>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h3 class="service-name">Maternity & Newborn</h3>
+                        <p class="service-desc">24/7 delivery & neonatal care</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3 class="service-name">Pediatric Immunization</h3>
+                        <p class="service-desc">KEPI schedule & child health</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="service-name">Theatre Services</h3>
+                        <p class="service-desc">Major & minor procedures</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="service-name">Laboratory</h3>
+                        <p class="service-desc">Full blood work & tests</p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card fade-in">
+                        <div class="service-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3 class="service-name">Pharmacy</h3>
+                        <p class="service-desc">Qualified chemist on-site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section">
+            <div class="container">
+                <div class="map-section">
+                    <div class="map-grid">
+                        <div class="map-info fade-in">
+                            <div class="map-badge">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Visit Our Branch</span>
+                            </div>
+                            <h2 class="map-title">
+                                Find us on <span>Shadrack Kimalel Road</span>
+                            </h2>
+                            <p class="map-address">
+                                Conveniently located in the heart of Nakuru town. Easy access, ample parking, and a welcoming environment for you and your family.
+                            </p>
+                            <a href="https://maps.google.com/?q=Nakuru+Maternity+Shadrack+Kimalel+Road" target="_blank" class="map-link">
+                                Get Directions <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <div class="map-container fade-in">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7536272511147!2d36.080123!3d-0.303099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMTgnMTEuMiJTIDM2wrAwNCc0OC40IkU!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+                                allowfullscreen=""
+                                loading="lazy"
+                                title="Nakuru Maternity Location">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Nakuru Maternity and Nursing Home. All rights reserved. Shadrack Kimalel Road, Nakuru.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Trust Bar Hide/Show on Scroll
+        let lastScrollY = window.scrollY;
+        const trustBar = document.getElementById('trustBar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down past 100px
+                trustBar.classList.add('hidden');
+            } else {
+                // Scrolling up
+                trustBar.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        // Intersection Observer for Fade Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update copyright year
+        document.querySelector('.footer p').innerHTML = `© ${new Date().getFullYear()} Nakuru Maternity and Nursing Home. All rights reserved. Shadrack Kimalel Road, Nakuru.`;
+
+        // Pre-filled WhatsApp message for pricing cards
+        document.querySelectorAll('.card-waiver').forEach(link => {
+            link.addEventListener('click', (e) => {
+                // You can add analytics tracking here if needed
+                console.log('WhatsApp inquiry clicked');
+            });
+        });
+    </script>
+</body>
+</html>
